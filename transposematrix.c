@@ -1,0 +1,1 @@
+// Write a program to find the transpose of a squre matrix of size n*n. Transpose of a matrix is obtained by changing rows to columns and columns to rows?

@@ -1,0 +1,23 @@
+#include <stdio.h>
+void CountDigit(int num);
+
+void CountDigit(int num)
+{
+ int count = 0;
+ do 
+  {
+    num /= 10;
+    ++count;
+  } while (num != 0);
+
+  printf("Number of digits %d", count);
+
+}
+
+void main() 
+{
+  long long num;
+  printf("Enter an integer - ");
+  scanf("%lld", &num);
+  CountDigit(num);
+}

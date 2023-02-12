@@ -1,0 +1,28 @@
+#include<stdio.h>
+void MT(int s,int e);
+
+void MT(int s,int e)
+{
+	int i, j, product;
+	/* Generating Multiplication Table */
+	for(i=s;i<=e;i++)
+	{
+		  for(j=1;j<=10;j++)
+		  {
+			   product = i*j;
+			   printf("%d x %d = %d\n", i, j, product);
+		  }
+		  printf("\n");
+	 }
+	
+}
+
+void main()
+{
+	 int s,e;
+	printf("Enter Sarting Table -");
+	scanf("%d",&s);
+	printf("Enter Ending Value -");
+	scanf("%d",&e);
+	MT(s,e);
+}
