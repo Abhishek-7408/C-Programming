@@ -1,0 +1,20 @@
+#include <stdio.h>
+  
+struct one 
+{
+    int x;
+    char y;
+    long z;
+} one1;
+  
+union two 
+{
+    int x;
+    char y;
+    long z;
+} two2;
+  
+void main()
+{
+    printf("sizeof(struct) = %lu, sizeof(union) = %lu",sizeof(one1), sizeof(two2));
+}

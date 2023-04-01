@@ -1,0 +1,48 @@
+#include<stdio.h>
+#include<string.h>
+struct Employee
+{
+    char ename[10];
+    float salary;
+    int age;
+    struct address
+    {
+        char city[10];
+        char state[10];
+    };
+
+};
+
+void main()
+{
+    struct Employee emp[3];
+
+    for(int i=0 ; i<2 ; i++)
+    {
+        printf("Employee %d name : ",i+1);
+        scanf("%s",&emp[i].ename);
+        printf("Employee %d salary : ",i+1);
+        scanf("%f",&emp[i].salary);
+        printf("Employee %d age : ",i+1);
+        scanf("%d",&emp[i].age);
+        printf("Employee %d city : ",i+1);
+        scanf("%s",&emp[i].city);
+        printf("Employee %d state : ",i+1);
+        scanf("%s",&emp[i].state);
+    }
+    output(emp);
+}
+
+void output(struct Employee emp[])
+{
+    printf("Displaying employee records,");
+
+    for(int i=0 ; i<2 ; i++)
+    {
+        printf("\nEmployee %d name : %s",i+1,emp[i].ename);
+        printf("\nEmployee %d salary : %f",i+1,emp[i].salary);
+        printf("\nEmployee %d age : %d",i+1, emp[i].age);
+        printf("\nEmployee %d city : %s",i+1,emp[i].city);
+        printf("\nEmployee %d state : %s",i+1,emp[i].state);
+    }
+}
